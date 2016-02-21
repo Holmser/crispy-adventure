@@ -12,8 +12,12 @@ func main() {
   //fmt.Println(x)
 
   var total float64 = 0
-  for i := 0; i< len(x); i++ {
-    total += x[i]
+  // for i := 0; i< len(x); i++ {
+  //   total += x[i]
+  // }
+  for _, value :=range x{
+  // _ tells us we don't actually need the iterator value
+    total += value
   }
   fmt.Println(total / float64(len(x)))
 }
